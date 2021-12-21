@@ -89,3 +89,15 @@
    
  sidebar:
    display: hide
+
+ mobile_layout_economy: true
+
+ google_site_verification: Ko9l2nloq6AW-YkxVn4imnxIyBLGv371rDlezDRDQDI
+ yandex_site_verification: ddf5c420321d7f1c
+
+# Google Analytics
+ google_analytics:
+   tracking_id: UA-36876880-1
+   # By default, NexT will load an external gtag.js script on your site.
+   # If you only need the pageview feature, set the following option to true to get a better performance.
+   only_pageview: false

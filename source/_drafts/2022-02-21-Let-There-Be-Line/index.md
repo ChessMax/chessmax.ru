@@ -92,5 +92,5 @@ e=mc^2
 
 
 
-{% inject "_posts/2022-02-21-Let-There-Be-Line/example_1.html" %}
+{% inject "_drafts/2022-02-21-Let-There-Be-Line/example_1.html" %}
 

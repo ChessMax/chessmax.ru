@@ -25,8 +25,8 @@
     <header>
       <nav>
         <a title="Home" href="/"><i class="fa-solid fa-code"></i></a>
-        <div>@model.title</div>
-        <a title="About" href="theme/about.html"><i class="fa fa-user fa-fw"></i></a>
+        <div>@site.title</div>
+        @*<a title="About" href="theme/about.html"><i class="fa fa-user fa-fw"></i></a>*@
         <a href="@author.github" title="Follow me on GitHub"
            aria-label="Follow me on GitHub" rel="noopener" target="_blank">
           <i class="fa-brands fa-github"></i>

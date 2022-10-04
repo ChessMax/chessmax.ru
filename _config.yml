@@ -6,14 +6,14 @@
 title: Мой Блогъ 2.0
 subtitle: ''
 description: ''
-keywords: blog 
+keywords: blog
 author: ChessMax
 language: ru
 timezone: 'Europe/Moscow'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://chessmax.ru
+url: http://chessmax.ru/hexo
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -21,7 +21,7 @@ pretty_urls:
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
-source_dir: source
+source_dir: source__
 public_dir: public
 tag_dir: tags
 archive_dir: archives
@@ -89,7 +89,7 @@ per_page: 10
 pagination_dir: page
 
 # Include / Exclude file(s)
-## include:/exclude: options only apply to the 'source/' folder
+## include:/exclude: options only apply to the 'source__/' folder
 include:
 exclude:
 ignore:
@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next  
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -108,16 +108,16 @@ deploy:
 marked:
   gfm: true
   breaks: false
-  
+
 symbols_count_time:
   symbols: false
-  
+
 search:
   path: search.xml
   field: post
   content: true
   format: html
-  
+
 feed:
   enable: true
   type: atom

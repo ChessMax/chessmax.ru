@@ -1,0 +1,35 @@
+﻿@{
+  var post = model;
+}
+<article>
+  <header>
+    <h2><a href="@post.url">@model.title</a></h2>
+    <div class="post-meta">
+            <span class="post-meta-item">
+                <i class="fa-regular fa-calendar"></i>
+                <span>
+                    <time datetime="2022-12-12">2022-12-12</time>
+                </span>
+            </span>
+
+      <span class="post-meta-item">
+              <i class="fa-regular fa-clock"></i>
+              <span>2 мин.</span>
+            </span>
+    </div>
+
+  </header>
+
+  <div class="post-body">
+    @if (post.excerpt && post.excerpt.length > 0) {
+      @post.excerpt
+    }
+    @if (!post.isIndex || !post.excerpt || post.excerpt.length <= 0) {
+      @post.content
+    }
+  </div>
+  <footer>
+
+
+  </footer>
+</article>

@@ -8,10 +8,10 @@
  *
  * Syntax:
  *   {% inject path/to/file %}
- *   Path is relative to your source directory.
+ *   Path is relative to your source__ directory.
  */
 
- 
+
 // hexo.extend.tag.register('include_alt', include, { asyn: true });
 // hexo.extend.tag.register('inject', function (args) {
 //     let str = "<canvas id=\"myCanvas\" width=\"150\" height=\"150\"></canvas>";
@@ -21,7 +21,7 @@
 // var fs = require('hexo-fs');
 // var nunjucks = require('nunjucks');
 // var pathFn = require('path');
-// const {resolve} = require("../themes/next/scripts/events/lib/utils");
+// const {resolve} = require("../themes/next/scripts__/events/lib/utils");
 // // hexo.extend.tag.register('include_alt', include, { asyn: true });
 // hexo.extend.tag.register('inject', function (args) {
 //     let str = "<canvas id=\"myCanvas\" width=\"150\" height=\"150\"></canvas>";
@@ -86,7 +86,7 @@ hexo.extend.tag.register('inject', async args => {
 
 // var pathFn = require('path');
 // var fs = require('hexo-fs');
-// 
+//
 // var include = function(ctx) {
 //     return function includeTag(args) {
 //         return "<canvas id=\"myCanvas\" width=\"150\" height=\"150\"></canvas>";

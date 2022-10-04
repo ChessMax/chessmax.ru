@@ -1,0 +1,17 @@
+﻿output: ./public
+site:
+  lang: ru
+  title: Мой Блогъ 2.0
+  created: 2011-07-21
+  description: Дев блог о всяком
+author:
+  name: ChessMax
+  github: https://github.com/ChessMax
+
+viewEngine:
+  name: vash
+#  views: ''
+  config:
+    htmlEscape: false
+#    settings:
+#      views: ./theme

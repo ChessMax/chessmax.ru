@@ -12,6 +12,9 @@
       <meta name="description" content="@site.description">
     }
 
+    <!--TODO: move to config-->
+    <meta name="yandex-verification" content="ddf5c420321d7f1c">
+
     <title>@title</title>
 
     <link rel="stylesheet" type="text/css" href="/css/index.css">
@@ -20,6 +23,16 @@
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   </head>
+  <!-- TODO: move somewhere? -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36876880-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-36876880-1');
+  </script>
   <body>
 
     <header>

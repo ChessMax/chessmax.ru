@@ -8,7 +8,8 @@
             <span class="post-meta-item">
                 <i class="fa-regular fa-calendar"></i>
                 <span>
-                    <time datetime="2022-12-12">2022-12-12</time>
+                    @* TODO: use site locale? *@
+                    <time>@post.created.toLocaleDateString('ru-Ru')</time>
                 </span>
             </span>
 
@@ -21,10 +22,11 @@
   </header>
 
   <div class="post-body">
-    @if (post.excerpt && post.excerpt.length > 0) {
+    @if (post.isIndex && post.excerpt && post.excerpt.length > 0) {
       @post.excerpt
-    }
-    @if (!post.isIndex || !post.excerpt || post.excerpt.length <= 0) {
+      @* TODO: localize *@
+      <a href="@post.url"><span id="more">Читать далее...</span></a>
+    } else {
       @post.content
     }
   </div>

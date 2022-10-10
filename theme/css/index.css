@@ -217,3 +217,22 @@ body footer {
     clear: both;
     display: table;
 }
+
+.post-tags {
+    text-align: center;
+}
+
+.post-tags a {
+    display: inline-block;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.post-tags a:not(:last-child) {
+    margin-right: 10px;
+}
+
+hr {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}

@@ -1,5 +1,6 @@
 ﻿@{
   var post = model;
+  var getTagUrl = post.urlBuilder.getTagUrl;
 }
 <article>
   <header>
@@ -30,8 +31,20 @@
       @post.content
     }
   </div>
-  <footer>
+  <hr/>
+  <footer class="post-footer">
 
+    @if (post.tags) {
+
+      <div class="post-tags">
+        @for (let tag of post.tags) {
+          <a href="@getTagUrl(tag)" rel="tag">
+            <i class="fa-solid fa-tag"></i>
+            @tag
+          </a>
+        }
+      </div>
+    }
 
   </footer>
 </article>

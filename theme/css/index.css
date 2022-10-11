@@ -4,6 +4,7 @@
     --text-color: #555;
     --on-primary-color: white;
     --selection-bg-color: #e9d3fb;
+    --code-font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
     font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
@@ -236,3 +237,50 @@ hr {
     margin-top: 25px;
     margin-bottom: 10px;
 }
+
+pre, code {
+    font-family: var(--code-font-family);
+}
+
+pre {
+    padding: 10px;
+    /*TODO: var*/
+    background-color: #f6f8fa!important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+p code,
+li code {
+    font-size: 1rem;
+    padding: 0.25rem;
+    margin: 0 0.25rem;
+    background: #f6f8fa!important;
+    border-radius: 3px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+/* Line numbers */
+code {
+    counter-reset: step;
+    counter-increment: step 0;
+}
+
+code .line::before {
+    font-family: var(--code-font-family);
+    content: counter(step);
+    counter-increment: step;
+    width: 1rem;
+    margin-right: 1.5rem;
+    display: inline-block;
+    text-align: right;
+    color: rgba(115,138,148,.5)
+}
+
+code .line:only-child::before {
+    content: none;
+}
+
+/* end line numbers */

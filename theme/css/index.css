@@ -248,6 +248,7 @@ pre {
     background-color: #f6f8fa!important;
     border: 1px solid #ccc;
     border-radius: 4px;
+    overflow: auto;
 }
 
 p code,
@@ -284,3 +285,7 @@ code .line:only-child::before {
 }
 
 /* end line numbers */
+
+img {
+    max-width: 100%;
+}

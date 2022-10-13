@@ -44,8 +44,7 @@ tags: [code review, dart, flutter]
 описывать проблемные места довольно дотошно каждый раз, а можно указать ссылку на пост),
 так и другим разработчикам, у которых тупо нет возможности быть хорошо проревьювенным.
 
-// TODO: image
-I wouldn't make this mistake ever again. Until tomorrow... of course
+![image](./step_on_a_rake.png)
 
 Сегодня мы рассмотрим два примера из реальной жизни.
 

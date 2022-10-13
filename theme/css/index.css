@@ -289,3 +289,21 @@ code .line:only-child::before {
 img {
     max-width: 100%;
 }
+
+/* Spoiler styles */
+details > summary {
+    background-color: #fdb;
+    cursor: pointer;
+    padding: .5rem 1rem;
+}
+
+details > summary > * {
+    display: inline;
+}
+
+details > div {
+    border: 2px solid #fdb;
+    margin-top: 0;
+    padding: 1rem;
+}
+/* end spoiler styles */

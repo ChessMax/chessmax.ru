@@ -329,9 +329,9 @@ Row(
 
 > Iterating over elements of a set may be either unordered or ordered in some way.
 > Examples:
-> - A HashSet is unordered, which means that its iteration order is unspecified,
-> - LinkedHashSet iterates in the insertion order of its elements, and
-> - a sorted set like SplayTreeSet iterates the elements in sorted order.
+> - A `HashSet` is unordered, which means that its iteration order is unspecified,
+> - `LinkedHashSet` iterates in the insertion order of its elements, and
+> - a sorted set like `SplayTreeSet` iterates the elements in sorted order.
 
 Таким образом, по умолчанию реализация множества использует `LinkedHashSet`, который,
 в свою очередь, итерирует элементы в последовательности добавления. Это и есть причина того, что

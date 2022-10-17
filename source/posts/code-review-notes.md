@@ -1,7 +1,7 @@
 ---
 title: Заметки из Code review
 created: 2022-10-08 16:30:06
-tags: [code review, dart, flutter, spread operator, collection comprehension]
+tags: [code review, dart, flutter, spread operator, set, collection comprehension]
 ---
 
 Этот пост является первым постом в серии "Заметки из Code review". В рамках этих постов

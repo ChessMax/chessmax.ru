@@ -1,7 +1,5 @@
 ﻿@html.extend('theme/layout.vash', function(model){
-  var parentModel = model;
   @html.block('content', function(model){
-    model.post.isIndex = model.isIndex;
-    @html.include('theme/includes/post.vash', model.post)
+    @html.include('theme/includes/post.vash', model)
   })
 })

@@ -1,7 +1,6 @@
 ﻿@html.extend('theme/layout.vash', function(model){
   @html.block('content', function(model){
     @model.posts.forEach(function(model){
-      model.isIndex = true;
       @html.include('theme/includes/post.vash', model)
     })
   })

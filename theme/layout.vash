@@ -1,15 +1,17 @@
 ﻿@{
-  var site = model.site;
+  var site = model.site ? model.site : model;
   var author = model.author ?? site.author;
   var title = model.title ?? site.title;
+  var description = model.description ?? site.description;
+  console.log(model.title);
 }<!doctype html>
 <html lang="@site.lang">
   <head>
     <meta charset="utf-8">
     <meta name="author" content="@author.name">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @if (site.description) {
-      <meta name="description" content="@site.description">
+    @if (description) {
+      <meta name="description" content="@description">
     }
 
     <!--TODO: move to config-->

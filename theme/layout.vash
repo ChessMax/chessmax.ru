@@ -3,6 +3,7 @@
   var author = model.author ?? site.author;
   var title = model.title ?? site.title;
   var description = model.description ?? site.description;
+  var tags = model.tags ? model.tags : null;
   console.log(model.title);
 }<!doctype html>
 <html lang="@site.lang">
@@ -10,14 +11,25 @@
     <meta charset="utf-8">
     <meta name="author" content="@author.name">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@title</title>
     @if (description) {
       <meta name="description" content="@description">
     }
+    @* TODO: should it be somewhere in a plugin ? cause it's FB open graph? *@
+    @if (model.tags) {
+      <meta name="keywords" content="@model.tags.join(', ')"><text>
+    </text>
+      @for (var tag of model.tags) {
+        <meta property="article:tag" content="@tag"><text>
+    </text>
+      }
+    }
+
+    @* TODO: take from css? or theme? *@
+    <meta name="theme-color" content="#000000">
 
     <!--TODO: move to config-->
     <meta name="yandex-verification" content="ddf5c420321d7f1c">
-
-    <title>@title</title>
 
     <link rel="stylesheet" type="text/css" href="/css/index.css">
 

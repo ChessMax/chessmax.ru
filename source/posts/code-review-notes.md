@@ -1,6 +1,7 @@
 ---
 title: Заметки из Code review
 created: 2022-10-08 16:30:06
+description: Синтаксический сахар бывает горьким
 tags: [code review, dart, flutter, spread operator, set, collection comprehension]
 ---
 

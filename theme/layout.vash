@@ -31,7 +31,8 @@
     <!--TODO: move to config-->
     <meta name="yandex-verification" content="ddf5c420321d7f1c">
 
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    @* TODO: fix link *@
+    <link rel="stylesheet" type="text/css" href="/blog/css/index.css">
 
     <!--TODO: download icons -->
     <link rel="stylesheet" type="text/css"
@@ -80,11 +81,11 @@
   }
 }
 *@
-
+@*
 <!-- TODO: make plugin somehow? -->
 <script>
     (function() {
-        var ws = new WebSocket('ws://localhost:9000');
+        let ws = new WebSocket('ws://localhost:9000');
         ws.onmessage = function (msg) {
             if (msg.data === 'reload') {
                 console.log('reloading');
@@ -93,3 +94,4 @@
         };
     })();
 </script>
+*@

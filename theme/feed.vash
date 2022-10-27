@@ -1,0 +1,38 @@
+﻿@* TODO: move this file to dev-press *@<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>@model.title</title>
+  @if (model.icon) {
+  <icon>@model.icon</icon>
+  }
+
+  <link href="@model.selfLink" rel="self"/>
+
+  <link href="@model.link"/>
+  <updated>@model.updated.toISOString()</updated>
+  <id>@model.id</id>
+
+  <author>
+    <name>@model.author.name</name>
+  </author>
+
+  @* <generator uri="https://hexo.io/">Hexo</generator> *@
+
+  @for (var entry of model.entries) {
+  <entry>
+    <title>@entry.title</title>
+    <link href="@entry.link"/>
+    <id>@entry.id</id>
+    <published>@entry.published.toISOString()</published>
+    <updated>@entry.updated.toISOString()</updated>
+
+    <summary type="html">@html.escape(entry.summary)</summary>
+
+    @for (var category of entry.categories) {
+
+    <category term="@category.term" scheme="@category.scheme"/>
+
+    }
+  </entry>
+  }
+
+</feed>

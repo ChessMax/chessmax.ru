@@ -4,8 +4,7 @@
   @if (model.icon) {
   <icon>@model.icon</icon>
   }
-
-  <link href="@model.selfLink" rel="self"/>
+  <link href="@model.selfLink" rel="self" type="application/rss+xml"/>
 
   <link href="@model.link"/>
   <updated>@model.updated.toISOString()</updated>
@@ -29,9 +28,10 @@
 
     @for (var category of entry.categories) {
 
-    <category term="@category.term" scheme="@category.scheme"/>
+    <category term="@category.term" scheme="@html.encodeURI(category.scheme)"/>
 
     }
+
   </entry>
   }
 

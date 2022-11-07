@@ -32,7 +32,7 @@
     <meta name="yandex-verification" content="ddf5c420321d7f1c">
 
     @* TODO: fix link *@
-    <link rel="stylesheet" type="text/css" href="/blog/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
 
     <!--TODO: download icons -->
     <link rel="stylesheet" type="text/css"

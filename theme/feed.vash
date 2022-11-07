@@ -13,25 +13,21 @@
   <author>
     <name>@model.author.name</name>
   </author>
-
   @* <generator uri="https://hexo.io/">Hexo</generator> *@
-
   @for (var entry of model.entries) {
-  <entry>
+  <text>
+  </text><entry>
     <title>@entry.title</title>
     <link href="@entry.link"/>
     <id>@entry.id</id>
     <published>@entry.published.toISOString()</published>
     <updated>@entry.updated.toISOString()</updated>
-
     <summary type="html">@html.escape(entry.summary)</summary>
-
-    @for (var category of entry.categories) {
-
-    <category term="@category.term" scheme="@html.encodeURI(category.scheme)"/>
-
-    }
-
+    @entry.categories.forEach(function(category){
+    <text>
+    </text>
+        <category term="@category.term" scheme="@html.encodeURI(category.scheme)"/>
+    })
   </entry>
   }
 

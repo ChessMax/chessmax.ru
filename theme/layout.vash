@@ -17,10 +17,10 @@
     }
     @* TODO: should it be somewhere in a plugin ? cause it's FB open graph? *@
     @if (model.tags) {
-      <meta name="keywords" content="@model.tags.join(', ')"><text>
+      <meta name="keywords" content="@model.tags.map((t) => t.name).join(', ')"><text>
     </text>
       @for (var tag of model.tags) {
-        <meta property="article:tag" content="@tag"><text>
+        <meta property="article:tag" content="@tag.name"><text>
     </text>
       }
     }

@@ -1,0 +1,30 @@
+﻿@html.extend('theme/layout.vash', function(model){
+  @html.block('content', function(model){
+    <h1>Tags</h1>
+    
+    <div class="post-body">
+      <div>
+        @for (let tag of model.tags) {
+        <text></text>
+        <a href="@tag.link">@tag.name <span>@tag.posts.length</span></a><text>
+        </text>
+        }
+      </div>
+      
+      @for (let tag of model.tags) {
+      <text></text>
+      <h2 id="@tag.ref">@tag.name</h2><text>
+      </text>
+      <ul>
+        @for (let post of tag.posts) {
+          <li><a href="@post.url">@post.title</a></li>
+          <text></text>
+        }
+      </ul><text>
+      </text>
+      
+      }
+    </div>
+
+})
+})

@@ -39,9 +39,9 @@
 
       <div class="post-tags">
         @for (let tag of post.tags) {
-          <a href="@getTagUrl(tag)" rel="tag">
+          <a href="@tag.link" rel="tag">
             <i class="fa-solid fa-tag"></i>
-            @tag
+            @tag.name
           </a>
         }
       </div>

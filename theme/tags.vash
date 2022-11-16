@@ -3,13 +3,17 @@
     <h1>Tags</h1>
     
     <div class="post-body">
-      <div>
+      <ul class="tag-box">
         @for (let tag of model.tags) {
         <text></text>
-        <a href="@tag.link">@tag.name <span>@tag.posts.length</span></a><text>
+        <li><a href="@tag.link" rel="tag">
+          <i class="fa-solid fa-tag"></i>
+          @tag.name
+          <span>@tag.posts.length</span>
+        </a></li><text>
         </text>
         }
-      </div>
+      </ul>
       
       @for (let tag of model.tags) {
       <text></text>

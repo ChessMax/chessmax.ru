@@ -342,6 +342,28 @@ blockquote p {
 
 /* tags page */
 ul.tag-box {
-    
+    list-style:none;
+    margin:0;
+    padding:5px 0 ;
+    overflow:hidden;
+}
+ul.tag-box li {
+    display: inline;
+    overflow: hidden;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+ul.tag-box a {
+    padding: 3px 6px;
+    margin: 2px;
+    /*background: var(--secondary-color);*/
+    border-radius: 3px;
+    border: 2px solid var(--secondary-color);
+    text-decoration: none;
+}
+
+ul.tag-box li a span {
+    vertical-align: super;
+    font-size: .8em;
 }
 /* end tags page */

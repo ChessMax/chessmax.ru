@@ -11,7 +11,7 @@
                 <i class="fa-regular fa-calendar"></i>
                 <span>
                     @* TODO: use site locale? *@
-                    <time>@post.created.toLocaleDateString('ru-Ru')</time>
+                    <time>@post.created.toISOString()</time>
                 </span>
             </span>
 

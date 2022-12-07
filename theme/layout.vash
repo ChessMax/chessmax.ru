@@ -5,7 +5,9 @@
   var description = model.description ?? site.description;
   var tags = model.tags ? model.tags : null;
   var baseUrl = site.baseUrl ? site.baseUrl : '';
-  console.log(model.title);
+  var bodyEnd = model.bodyEnd ?? site.bodyEnd;
+  // console.log(model.title);
+  // console.log(bodyEnd);
 }<!doctype html>
 <html lang="@site.lang">
   <head>
@@ -75,27 +77,12 @@
             <span>@author.name</span>
         </span>
     </footer>
-  
+    @html.block('body-end', function(model) {
+      @if (bodyEnd) {
+        @for (var item of bodyEnd) {
+          @item
+        }
+      }
+    })
   </body>
 </html>
-
-@*@if (model.postHtml) {
-  @for (var code in model.postHtml) {
-    @code
-  }
-}
-*@
-@*
-<!-- TODO: make plugin somehow? -->
-<script>
-    (function() {
-        let ws = new WebSocket('ws://localhost:9000');
-        ws.onmessage = function (msg) {
-            if (msg.data === 'reload') {
-                console.log('reloading');
-                window.location.reload();
-            }
-        };
-    })();
-</script>
-*@

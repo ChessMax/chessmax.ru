@@ -32,7 +32,7 @@
       @post.content
     }
   </div>
-  <hr/>
+  <hr>
   <footer class="post-footer">
 
     @if (post.tags) {

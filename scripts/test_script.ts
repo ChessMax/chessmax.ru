@@ -1,5 +1,3 @@
-﻿require('Plugin');
-
-export class TestScript extends Plugin {
-
+﻿export function initialize(context: any):void {
+    console.log('loadded');
 }

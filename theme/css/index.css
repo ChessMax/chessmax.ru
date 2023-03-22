@@ -4,7 +4,7 @@
     --text-color: #555;
     --on-primary-color: white;
     --selection-bg-color: #e9d3fb;
-    --code-font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    --code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
@@ -54,6 +54,7 @@ nav {
     nav {
         max-width: 750px;
     }
+
     main {
         max-width: 750px;
     }
@@ -245,7 +246,7 @@ pre, code {
 pre {
     padding: 10px;
     /*TODO: var*/
-    background-color: #f6f8fa!important;
+    background-color: #f6f8fa !important;
     border: 1px solid #ccc;
     border-radius: 4px;
     overflow: auto;
@@ -256,7 +257,7 @@ li code {
     font-size: 1rem;
     padding: 0.25rem;
     margin: 0 0.25rem;
-    background: #f6f8fa!important;
+    background: #f6f8fa !important;
     border-radius: 3px;
     line-height: 1.2;
     margin-bottom: 5px;
@@ -277,7 +278,7 @@ code .line::before {
     margin-right: 1.5rem;
     display: inline-block;
     text-align: right;
-    color: rgba(115,138,148,.5)
+    color: rgba(115, 138, 148, .5)
 }
 
 code .line:only-child::before {
@@ -288,6 +289,18 @@ code .line:only-child::before {
 
 img {
     max-width: 100%;
+}
+
+/* align MD images horizontally by center */
+p img {
+    margin: auto;
+    display: block;
+}
+
+/* align YT videos horizontally by center */
+iframe {
+    margin: auto;
+    display: block;
 }
 
 /* Spoiler styles */
@@ -306,6 +319,7 @@ details > div {
     margin-top: 0;
     padding: 1rem;
 }
+
 /* end spoiler styles */
 
 /* Blockquote styles */
@@ -342,17 +356,19 @@ blockquote p {
 
 /* tags page */
 ul.tag-box {
-    list-style:none;
-    margin:0;
-    padding:5px 0 ;
-    overflow:hidden;
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+    overflow: hidden;
 }
+
 ul.tag-box li {
     display: inline;
     overflow: hidden;
     box-sizing: border-box;
     white-space: nowrap;
 }
+
 ul.tag-box a {
     padding: 3px 6px;
     margin: 2px;
@@ -366,4 +382,5 @@ ul.tag-box li a span {
     vertical-align: super;
     font-size: .8em;
 }
+
 /* end tags page */

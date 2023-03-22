@@ -22,7 +22,10 @@
     <id>@entry.id</id>
     <published>@entry.published.toISOString()</published>
     <updated>@entry.updated.toISOString()</updated>
-    <summary type="html">@html.escape(entry.summary)</summary>
+    <summary>entry.summary</summary>
+    <content type="html">
+      @html.escape(entry.content)
+    </content>
     @entry.categories.forEach(function(category){
     <text>
     </text>

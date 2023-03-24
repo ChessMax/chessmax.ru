@@ -1,7 +1,7 @@
 ---
 title: Болевые точки Dart и Flutter
 description: Раздражающие вещи во Flutter и Dart, с которыми приходится мириться ежедневно.
-tags: [dart, flutter, pain points, pros, cons]
+tags: [dart, flutter, боль, pain points, pros, cons]
 ---
 
 ![Toy story meme: Pain points. Pain points everywhere](./painpoints-everywhere.webp)

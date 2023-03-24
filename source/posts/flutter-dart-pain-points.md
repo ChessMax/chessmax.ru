@@ -4,7 +4,7 @@ description: Раздражающие вещи во Flutter и Dart, с кото
 tags: [dart, flutter, боль, pain points, pros, cons]
 ---
 
-![Toy story meme: Pain points. Pain points everywhere](./painpoints-everywhere.webp)
+![Toy story meme: Pain points. Pain points everywhere](./painpoints-everywhere.png)
 
 [_Flutter_](https://flutter.dev/) - довольно популярный фреймворк для разработки кроссплатформенных приложений. В основном это
 приложения под _Android_ и _iOS_, но все же имеется возможность разрабатывать и под другие платформы,

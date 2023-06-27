@@ -1,5 +1,5 @@
 ---
-title: Больше классов Богу классов
+title: Больше классов богу классов
 description: Новый тип модификатора классов в языке Dart, который уже не подходе.
 tags: [dart, flutter, inline class, class modifiers, haxe, haskell, newtype, zero-cost abstraction,
 functional programming, fp, unit of measure, f#]

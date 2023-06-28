@@ -5,7 +5,7 @@ tags: [dart, flutter, inline class, class modifiers, haxe, haskell, newtype, zer
 functional programming, fp, unit of measure, f#]
 ---
 
-![Distracted men meme: New clas modifier](./distracted_boyfriend_meme_inline_classes.jpg)
+![Distracted men meme: New class modifier](./distracted_boyfriend_meme_inline_classes.jpg)
 
 Совсем недавно команда разработки _Dart_ выпустила _3_-ю версию языка, которая привнесла много новых
 крутых штук и возможностей. Одним из нововведений стали модификаторы классов, которые довольно

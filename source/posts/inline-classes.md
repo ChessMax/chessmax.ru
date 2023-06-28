@@ -759,6 +759,8 @@ fn main() {
 `newtype` для _Scala_. Или вот [реализация](https://github.com/gcanti/newtype-ts) для _TypeScript_. 
 Как оказывается, язык _Go_ поддерживает эту возможность [нативно](https://go.dev/blog/laws-of-reflection).
 _Kotlin_ также имеет [Inline Classes](https://kotlinlang.org/docs/inline-classes.html#inline-classes-and-delegation).
+В языке _Scala 3_ эта фича тоже присутствует. Называется она [_Opaque Types_](https://docs.scala-lang.org/scala3/book/types-opaque-types.html),
+основная цель этой фичи - избавиться от накладных расходов на абстракцию.
 Для меня оказалось приятным сюрпризом, что, в той или иной мере, довольно много условно мейнстрим-языков 
 поддерживает подобный функционал. Когда подобный функционал встречается в _ФП_ языках, это
 воспринимается как само собой разумеющееся. Наличие инлайн-классов в _Kotlin_ наводит на мысли,
